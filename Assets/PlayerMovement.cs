@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public Transform ceilingCheck;
+    public float checkDistance = 0.4f;
     public LayerMask groundMask;
 
     public float speed = 12f;
@@ -18,16 +19,18 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckSphere(groundCheck.position, checkDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
             velocity.y = -1f;
 
+        if (!isGrounded && Physics.CheckSphere(ceilingCheck.position,checkDistance, groundMask))
+            velocity.y = -1f;
+
         if (Input.GetButtonDown("Jump") && isGrounded)
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            velocity.y = Mathf.Sqrt(jumpHeight * -1f * gravity);
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
