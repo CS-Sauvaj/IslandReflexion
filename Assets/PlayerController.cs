@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         if(focus != null)
             focus.OnDefocused();
+
         focus = null;
     }
 }

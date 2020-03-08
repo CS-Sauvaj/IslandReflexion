@@ -10,11 +10,13 @@ public class Interactable : MonoBehaviour
 
     bool hasInteracted = false;
 
+    public LevelMenue Levels;
 
     public virtual void Interact()
     {
         //Interactions differentes en fonction de la classe.
         Debug.Log("Interacting with " + transform.name);
+        Levels.Level1();
     }
 
 
@@ -43,5 +45,6 @@ public class Interactable : MonoBehaviour
         isFocus = false;
         player = null;
         hasInteracted = false;
+        Levels.QuitLevel();
     }
 }
