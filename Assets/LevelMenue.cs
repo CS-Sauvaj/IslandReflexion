@@ -30,7 +30,8 @@ public class LevelMenue : MonoBehaviour
             OnLevel = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-        RefUI.SetActive(false);
+        if(RefUI != null)
+            RefUI.SetActive(false);
         RefUI = null;
     }
 
