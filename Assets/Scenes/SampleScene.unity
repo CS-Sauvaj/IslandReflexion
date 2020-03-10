@@ -4265,6 +4265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 882392234}
+  - component: {fileID: 882392235}
   m_Layer: 0
   m_Name: Levels
   m_TagString: Untagged
@@ -4280,13 +4281,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882392233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 831.4827, y: 308.83957, z: 1084.8455}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1554803354}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882392235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882392233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d806884f2b198b845a46178d6b9aaa54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level1UI: {fileID: 1484412411}
 --- !u!1 &882638409
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,8 +6308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1491499852}
-        m_MethodName: OnDefocused
+      - m_Target: {fileID: 882392235}
+        m_MethodName: BackButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7348,11 +7362,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1491499850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd579b26cb7fef6418fe8fc0d39151ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cb6bde6878fef847a8eb67edb245511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
-  Levels: {fileID: 173448897}
+  LevelMenue: {fileID: 882392235}
 --- !u!135 &1491499853
 SphereCollider:
   m_ObjectHideFlags: 0
