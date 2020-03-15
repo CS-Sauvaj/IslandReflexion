@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\VolumeSlider.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jules/Desktop/PS2/IslandReflexion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
