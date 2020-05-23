@@ -9,11 +9,15 @@ public class DoorController : Interactable
     bool isRotating = false;
 
     public GameObject Door;
+    public LevelMenue levelMenue;
 
     public override void Interact()
     {
-        isRotating = true;
-        base.Interact();
+        if (levelMenue.level1done)
+        {
+            isRotating = true;
+            base.Interact();
+        }
     }
     public override void Update()
     {

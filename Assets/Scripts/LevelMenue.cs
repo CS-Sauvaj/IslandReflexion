@@ -6,6 +6,8 @@ public class LevelMenue : MonoBehaviour
 {
     public static bool OnLevel = false;
 
+    public bool level1done = false;
+
     public GameObject Level1UI;
 
     GameObject RefUI;

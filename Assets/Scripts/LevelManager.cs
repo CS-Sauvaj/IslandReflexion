@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    public GameObject Level1UI;
+
+    public LevelMenue levelMenue;
+
     static int idGroup = 1;
 
     public Button button1;
@@ -32,6 +36,31 @@ public class LevelManager : MonoBehaviour
     public Button button23;
     public Button button24;
 
+    public Text text1;
+    public Text text2;
+    public Text text3;
+    public Text text4;
+    public Text text5;
+    public Text text6;
+    public Text text7;
+    public Text text8;
+    public Text text9;
+    public Text text10;
+    public Text text11;
+    public Text text12;
+    public Text text13;
+    public Text text14;
+    public Text text15;
+    public Text text16;
+    public Text text17;
+    public Text text18;
+    public Text text19;
+    public Text text20;
+    public Text text21;
+    public Text text22;
+    public Text text23;
+    public Text text24;
+
     public Button groupe1;
     public Button groupe2;
     public Button groupe3;
@@ -41,29 +70,44 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Groupe 1 selectionné");
         idGroup = 1;
+        groupe1.GetComponent<Image>().color = Color.green;
+        groupe2.GetComponent<Image>().color = Color.white;
+        groupe3.GetComponent<Image>().color = Color.white;
+        groupe4.GetComponent<Image>().color = Color.white;
     }
     public void Grp2()
     {
         Debug.Log("Groupe 2 selectionné");
         idGroup = 2;
+        groupe1.GetComponent<Image>().color = Color.white;
+        groupe2.GetComponent<Image>().color = Color.green;
+        groupe3.GetComponent<Image>().color = Color.white;
+        groupe4.GetComponent<Image>().color = Color.white;
     }
 
     public void Grp3()
     {
         Debug.Log("Groupe 3 selectionné");
         idGroup = 3;
+        groupe1.GetComponent<Image>().color = Color.white;
+        groupe2.GetComponent<Image>().color = Color.white;
+        groupe3.GetComponent<Image>().color = Color.green;
+        groupe4.GetComponent<Image>().color = Color.white;
     }
     public void Grp4()
     {
         Debug.Log("Groupe 4 selectionné");
         idGroup = 4;
+        groupe1.GetComponent<Image>().color = Color.white;
+        groupe2.GetComponent<Image>().color = Color.white;
+        groupe3.GetComponent<Image>().color = Color.white;
+        groupe4.GetComponent<Image>().color = Color.green;
     }
 
     public void Button1()
     {
         Debug.Log("Bouton 1 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text1.text = (idGroup.ToString());
         if (setGroup(0, 0))
         {
             Debug.Log("Win");
@@ -74,8 +118,7 @@ public class LevelManager : MonoBehaviour
     public void Button2()
     {
         Debug.Log("Bouton 2 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text2.text = (idGroup.ToString());
         if (setGroup(1, 0))
         {
             Debug.Log("Win");
@@ -86,8 +129,7 @@ public class LevelManager : MonoBehaviour
     public void Button3()
     {
         Debug.Log("Bouton 3 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text3.text = (idGroup.ToString());
         if (setGroup(2, 0))
         {
             Debug.Log("Win");
@@ -98,8 +140,7 @@ public class LevelManager : MonoBehaviour
     public void Button4()
     {
         Debug.Log("Bouton 4 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text4.text = (idGroup.ToString());
         if (setGroup(3, 0))
         {
             Debug.Log("Win");
@@ -109,8 +150,7 @@ public class LevelManager : MonoBehaviour
     public void Button5()
     {
         Debug.Log("Bouton 5 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text5.text = (idGroup.ToString());
         if (setGroup(4, 0))
         {
             Debug.Log("Win");
@@ -120,8 +160,7 @@ public class LevelManager : MonoBehaviour
     public void Button6()
     {
         Debug.Log("Bouton 6 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text6.text = (idGroup.ToString());
         if (setGroup(5, 0))
         {
             Debug.Log("Win");
@@ -131,8 +170,7 @@ public class LevelManager : MonoBehaviour
     public void Button7()
     {
         Debug.Log("Bouton 7 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text7.text = (idGroup.ToString());
         if (setGroup(0, 1))
         {
             Debug.Log("Win");
@@ -142,8 +180,7 @@ public class LevelManager : MonoBehaviour
     public void Button8()
     {
         Debug.Log("Bouton 8 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text8.text = (idGroup.ToString());
         if (setGroup(1, 1))
         {
             Debug.Log("Win");
@@ -153,8 +190,7 @@ public class LevelManager : MonoBehaviour
     public void Button9()
     {
         Debug.Log("Bouton 9 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text9.text = (idGroup.ToString());
         if (setGroup(2, 1))
         {
             Debug.Log("Win");
@@ -164,8 +200,7 @@ public class LevelManager : MonoBehaviour
     public void Button10()
     {
         Debug.Log("Bouton 10 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text10.text = (idGroup.ToString());
         if (setGroup(3, 1))
         {
             Debug.Log("Win");
@@ -175,8 +210,7 @@ public class LevelManager : MonoBehaviour
     public void Button11()
     {
         Debug.Log("Bouton 11 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text11.text = (idGroup.ToString());
         if (setGroup(4, 1))
         {
             Debug.Log("Win");
@@ -186,8 +220,7 @@ public class LevelManager : MonoBehaviour
     public void Button12()
     {
         Debug.Log("Bouton 12 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text12.text = (idGroup.ToString());
         if (setGroup(5, 1))
         {
             Debug.Log("Win");
@@ -197,8 +230,7 @@ public class LevelManager : MonoBehaviour
     public void Button13()
     {
         Debug.Log("Bouton 13 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text13.text = (idGroup.ToString());
         if (setGroup(0, 2))
         {
             Debug.Log("Win");
@@ -208,8 +240,7 @@ public class LevelManager : MonoBehaviour
     public void Button14()
     {
         Debug.Log("Bouton 14 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text14.text = (idGroup.ToString());
         if (setGroup(1, 2))
         {
             Debug.Log("Win");
@@ -219,8 +250,7 @@ public class LevelManager : MonoBehaviour
     public void Button15()
     {
         Debug.Log("Bouton 15 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text15.text = (idGroup.ToString());
         if (setGroup(2, 2))
         {
             Debug.Log("Win");
@@ -230,8 +260,7 @@ public class LevelManager : MonoBehaviour
     public void Button16()
     {
         Debug.Log("Bouton 16 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text16.text = (idGroup.ToString());
         if (setGroup(3, 2))
         {
             Debug.Log("Win");
@@ -241,8 +270,7 @@ public class LevelManager : MonoBehaviour
     public void Button17()
     {
         Debug.Log("Bouton 17 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text17.text = (idGroup.ToString());
         if (setGroup(4, 2))
         {
             Debug.Log("Win");
@@ -252,8 +280,7 @@ public class LevelManager : MonoBehaviour
     public void Button18()
     {
         Debug.Log("Bouton 18 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text18.text = (idGroup.ToString());
         if (setGroup(5, 2))
         {
             Debug.Log("Win");
@@ -263,8 +290,7 @@ public class LevelManager : MonoBehaviour
     public void Button19()
     {
         Debug.Log("Bouton 19 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text19.text = (idGroup.ToString());
         if (setGroup(0, 3))
         {
             Debug.Log("Win");
@@ -274,8 +300,7 @@ public class LevelManager : MonoBehaviour
     public void Button20()
     {
         Debug.Log("Bouton 20 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text20.text = (idGroup.ToString());
         if (setGroup(1, 3))
         {
             Debug.Log("Win");
@@ -285,8 +310,7 @@ public class LevelManager : MonoBehaviour
     public void Button21()
     {
         Debug.Log("Bouton 21 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text21.text = (idGroup.ToString());
         if (setGroup(2, 3))
         {
             Debug.Log("Win");
@@ -296,8 +320,7 @@ public class LevelManager : MonoBehaviour
     public void Button22()
     {
         Debug.Log("Bouton 22 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text22.text = (idGroup.ToString());
         if (setGroup(3, 3))
         {
             Debug.Log("Win");
@@ -307,8 +330,7 @@ public class LevelManager : MonoBehaviour
     public void Button23()
     {
         Debug.Log("Bouton 23 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text23.text = (idGroup.ToString());
         if (setGroup(4, 3))
         {
             Debug.Log("Win");
@@ -318,8 +340,7 @@ public class LevelManager : MonoBehaviour
     public void Button24()
     {
         Debug.Log("Bouton 24 cliqué");
-        Text text = button1.GetComponent<Text>();
-        text.text = (idGroup.ToString());
+        text24.text = (idGroup.ToString());
         if (setGroup(5, 3))
         {
             Debug.Log("Win");
@@ -442,6 +463,9 @@ public class LevelManager : MonoBehaviour
 
     public void Win()
     {
-
+        levelMenue.level1done = true;
+        LevelMenue.OnLevel = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Level1UI.SetActive(false);
     }
 }
