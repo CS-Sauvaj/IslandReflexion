@@ -6,7 +6,7 @@ public class LevelMenue : MonoBehaviour
 {
     public static bool OnLevel = false;
 
-    public bool level1done = false;
+    public DoorController doorOpener;
 
     public GameObject Level1UI;
 
@@ -44,5 +44,10 @@ public class LevelMenue : MonoBehaviour
         OnLevel = false;
         Cursor.lockState = CursorLockMode.Locked;
         Level1UI.SetActive(false);
+    }
+
+    public void level1done()
+    {
+        doorOpener.unlock();
     }
 }

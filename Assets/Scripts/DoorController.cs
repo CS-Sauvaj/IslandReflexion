@@ -7,13 +7,13 @@ public class DoorController : Interactable
     int sens = 1;
     int acc = 0;
     bool isRotating = false;
+    bool isLocked = true;
 
     public GameObject Door;
-    public LevelMenue levelMenue;
 
     public override void Interact()
     {
-        if (levelMenue.level1done)
+        if(!isLocked)
         {
             isRotating = true;
             base.Interact();
@@ -33,5 +33,10 @@ public class DoorController : Interactable
                 isRotating = false;
             }
         }
+    }
+
+    public void unlock()
+    {
+        isLocked = false;
     }
 }

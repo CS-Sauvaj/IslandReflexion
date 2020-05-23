@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-
+        
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
@@ -42,5 +42,11 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (controller.transform.position.z < -76)
+        {
+            Vector3 toSpawn = new Vector3(-controller.transform.position.x, -controller.transform.position.y, -controller.transform.position.z);
+            controller.SimpleMove(toSpawn*Time.deltaTime);
+        }
     }
 }

@@ -463,7 +463,7 @@ public class LevelManager : MonoBehaviour
 
     public void Win()
     {
-        levelMenue.level1done = true;
+        levelMenue.level1done();
         LevelMenue.OnLevel = false;
         Cursor.lockState = CursorLockMode.Locked;
         Level1UI.SetActive(false);
