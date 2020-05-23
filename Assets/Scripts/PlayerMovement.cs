@@ -43,10 +43,10 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        if (controller.transform.position.z < -76)
+        if (controller.transform.position.y < -17)
         {
-            Vector3 toSpawn = new Vector3(-controller.transform.position.x, -controller.transform.position.y, -controller.transform.position.z);
-            controller.SimpleMove(toSpawn*Time.deltaTime);
+            controller.transform.position = new Vector3(473, 25, -32);
+            controller.transform.rotation = new Quaternion(0, 176, 0, 0);
         }
     }
 }
