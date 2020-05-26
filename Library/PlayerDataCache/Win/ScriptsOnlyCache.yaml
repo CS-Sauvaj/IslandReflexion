@@ -24,6 +24,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -32,7 +34,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.ServerSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -564,7 +565,7 @@ ScriptsOnlyBuild:
     className: FriendListCell
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 5ffbbd721308eb53e165265cb412bc70
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelManager
@@ -1566,7 +1567,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomIsOfflineProperty
   - hash:
       serializedVersion: 2
-      Hash: e26befecb93b1855573a05e66e783300
+      Hash: 431f748c0f5f10e077c8fbe52a9d8831
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelMenue
@@ -1659,5 +1660,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenue.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/MultiplayerScene.unity
-  playerPath: C:/Users/hugos/Desktop/EPITA/Programmation/Projet S2/Jeu Build/Island
-    Reflexion.exe
+  playerPath: C:/Users/Hugo Simony/Desktop/Island Reflexion/Island Reflexion.exe
